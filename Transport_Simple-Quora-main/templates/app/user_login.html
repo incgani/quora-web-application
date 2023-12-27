@@ -1,0 +1,39 @@
+{% extends 'app/dummy.html' %}
+{% block title %}
+    <title>login</title>
+{% endblock %}
+
+{% block body_block %}
+<center>
+<form method="POST">
+
+    {% csrf_token %}
+<div id="reg1" class='form-group'>
+    <div>
+        <br>
+        <center>
+    <h2>Login Here</h2>
+    </center>
+    </div>
+    <br>
+	<b>
+    <div>
+        <br>
+        <label for="username" class="fas fa-user">Username :</label>
+            <input type="text" name="username" id="username"><br>
+    </div >
+    
+    <div >
+        <label for="password" class="fas fa-low-vision">Password :</label>
+            <input type="password" name="password" id="password"><br>
+</b>	
+<br><br>
+    </div >
+    <div >
+    <input type="submit" value="Login" class=" btn-primary">
+      </div>  
+    
+    </center>        
+    </div>
+</form>
+{% endblock %}
